@@ -1,0 +1,58 @@
+{
+  "name": "vue-use-last-changed",
+  "version": "1.0.0",
+  "description": "Vue 3 reactive timestamp of when value last changed",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "logo.svg",
+    "banner.svg",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "prepublishOnly": "cp README.npm.md README.md && npm run build",
+    "postpublish": "cp README.github.md README.md"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "composition-api",
+    "composable",
+    "vueuse",
+    "timestamp",
+    "changed",
+    "watch",
+    "track",
+    "last",
+    "time",
+    "modified"
+  ],
+  "author": "VueFrag",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuefrag/vue-use-last-changed.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vuefrag/vue-use-last-changed/issues"
+  },
+  "homepage": "https://github.com/vuefrag/vue-use-last-changed#readme",
+  "peerDependencies": {
+    "vue": ">=3.0.0"
+  },
+  "devDependencies": {
+    "unbuild": "^2.0.0",
+    "typescript": "^5.0.0",
+    "vue": "^3.4.0"
+  }
+}
