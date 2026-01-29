@@ -1,6 +1,5 @@
 import type { ShallowRef, WatchOptions, WatchSource } from 'vue'
 import { shallowReadonly, shallowRef, watch } from 'vue'
-// Inlined from @vueuse/shared/utils
 // TODO: Inline import timestamp
 
 

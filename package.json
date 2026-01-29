@@ -1,6 +1,6 @@
 {
   "name": "vue-use-last-changed",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vue 3 reactive timestamp of when value last changed",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
@@ -19,9 +19,7 @@
     "README.md"
   ],
   "scripts": {
-    "build": "unbuild",
-    "prepublishOnly": "cp README.npm.md README.md && npm run build",
-    "postpublish": "cp README.github.md README.md"
+    "build": "unbuild"
   },
   "keywords": [
     "vue",
@@ -48,7 +46,7 @@
   },
   "homepage": "https://github.com/vuefrag/vue-use-last-changed#readme",
   "peerDependencies": {
-    "vue": ">=3.0.0"
+    "vue": "^3.5.0"
   },
   "devDependencies": {
     "unbuild": "^2.0.0",
